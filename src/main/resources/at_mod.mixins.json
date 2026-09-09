@@ -1,0 +1,16 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.alternative_twilight.at_mod.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "refmap": "at_mod.refmap.json",
+  "mixins": [
+    "lich.LichMixin",
+    "naga.NagaMixin"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

@@ -1,0 +1,43 @@
+# Gradle 构建产物与缓存
+.gradle/
+build/
+out/
+classes/
+
+# IDE - IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# IDE - Eclipse
+bin/
+.settings/
+.metadata/
+.classpath
+.project
+*.launch
+
+# IDE - VSCode
+.vscode/
+
+# 运行时目录（runClient / runServer 等产生的存档、日志与配置）
+run/
+runs/
+run-*/
+logs/
+crash-reports/
+eula.txt
+
+# 数据生成输出与缓存（生成内容按需手动提交，缓存不提交）
+src/generated/resources/.cache/
+
+# Maven 本地发布目录（maven-publish 模板默认输出）
+repo/
+
+# 备份与系统文件
+*.bak
+Thumbs.db
+.DS_Store
+
+docs

@@ -1,0 +1,43 @@
+modLoader = "javafml"
+loaderVersion = "${loader_version_range}"
+license = "${mod_license}"
+# 建立GitHub仓库后取消注释并填写实际地址
+#issueTrackerURL = "https://github.com/<你的用户名>/<仓库名>/issues"
+
+[[mods]]
+modId = "${mod_id}"
+version = "${mod_version}"
+displayName = "${mod_name}"
+authors = "lvedy"
+description = '''
+为暮色森林提供战斗、装备、Boss 机制、Boss 音乐与视觉特效扩展的附属模组。
+An addon for Twilight Forest that expands combat, equipment, boss mechanics, boss music and visual effects.
+'''
+
+# 矛类客户端 ArmPose 枚举扩展（由 EnumExtensions 加载）
+enumExtensions = "META-INF/enumextensions.json"
+
+[[mixins]]
+config = "${mod_id}.mixins.json"
+
+[[dependencies.${mod_id}]]
+modId = "neoforge"
+type = "required"
+versionRange = "[${neo_version},)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.${mod_id}]]
+modId = "minecraft"
+type = "required"
+versionRange = "${minecraft_version_range}"
+ordering = "NONE"
+side = "BOTH"
+
+# 暮色森林本体（必需，且在其之后加载）
+[[dependencies.${mod_id}]]
+modId = "twilightforest"
+type = "required"
+versionRange = "[${twilightforest_version},)"
+ordering = "AFTER"
+side = "BOTH"

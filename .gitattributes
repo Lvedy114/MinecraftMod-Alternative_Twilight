@@ -1,0 +1,25 @@
+# 默认按文本自动处理换行
+* text=auto
+
+# Windows 批处理必须使用 CRLF
+*.bat text eol=crlf
+
+# Shell 脚本与 Gradle wrapper 必须使用 LF
+*.sh text eol=lf
+gradlew text eol=lf
+
+# 明确的文本类型
+*.java text
+*.json text
+*.toml text
+*.gradle text
+*.properties text
+*.md text
+*.fsh text
+*.vsh text
+
+# 二进制资源，禁止换行转换
+*.png binary
+*.ogg binary
+*.jar binary
+*.zip binary
